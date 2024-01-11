@@ -1,0 +1,58 @@
+#Pong game pseudocode - Stone
+
+display menu with three game modes, controls and instructions as well as a highscore
+each game mode is represented by clickable buttons and text
+play backgroundmusic
+
+if player clicks on settings
+	show player buttons used to control paddle
+	allow player to return to the menu
+
+if player clicks on help
+	show player the instructions on how to play the game
+	give player option to access control page from the help page or return to menu
+
+if player chooses classic mode
+	give player the option to choose an easy or hard difficulty or the option to return to the menu
+	if easy difficulty is chosen
+		take player to game
+		when the player moves the paddle the game starts and the ball drops on the paddle
+		whenever the ball hits anywhere on the paddle, bounce off realistically and play a sound effect
+		everytime the ball hits the paddle the player's score goes up
+		if the ball is in contact with any walls the ball will make a sound and bounce off
+		if the paddle reaches the edge of the screen the paddle will stop
+		if the ball hits the player's screen behind the paddle the player dies. Text is displayed and death sound is played
+			location of ball and paddle are reset
+		if the player loses three lives defeat sound is played and player loses
+		if the player beats the previous highscore new highscore is set and saved
+		if user decides to leave the game exit the program and save the highscore
+	if hard difficulty is chosen
+		retain the same structure as easy mode
+		every 5 points the paddle gets shorter and more red in colour and the ball speeds up
+
+if player chooses practice mode
+	give player the option to choose an easy or hard difficulty or the option to return to the menu
+	if easy difficulty is chosen
+		take player to game
+		the player now plays against a CPU instead of bouncing against a wall and there is no score system		
+		bouncing mechanics and basic game structure is similar to classic mode		
+		both side's objective is to block the ball from going past their paddle
+		when the ball passes a player's paddle they lose a life and text is displayed sound effect is played
+		first player to lose 3 lives loses and defeat sound is played
+	if hard difficuly is chosen
+		retains the same settings as easy practice mode
+		the player's paddle colour is now camoflauged with the background
+
+if player chooses multiplayer mode
+	give player the option to choose an easy or hard difficulty or the option to return to the menu
+	if easy difficulty is chosen
+		take players to game
+		the player now plays against another player and there is no score system		
+		bouncing mechanics and basic game structure is similar to practice mode	
+	if hard difficulty is chosen
+		retains same settings as easy multiplayer mode
+		make both player's paddle significantly slower
+
+if player clicks on the ok button
+	show player a picture of a chair
+	give them the option to return to the menu
